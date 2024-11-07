@@ -1,69 +1,35 @@
-.App {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  line-height: 1.6;
-  max-width: 900px;
-  margin: auto;
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
 }
 
-.header {
-  text-align: center;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
 }
 
-.header h1 {
-  margin: 0;
+body {
+  font-family: 'Satoshi', sans-serif;
+  color: #e0e0e0;
 }
 
-.header nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #0073b1;
+*, *::before, *::after {
+    font-family: inherit;
 }
 
-.contact-info a {
-  font-size: 1.5em;
-  margin: 0 10px;
+.scrollable {
+  overflow-y: scroll;
+  height: 100vh;
 }
 
-.profile-section, .projects-section, .skills-section {
-  margin: 20px 0;
+.scrollable::-webkit-scrollbar {
+  width: 0;
 }
 
-.project-grid {
-  display: flex;
-  gap: 20px;
-}
-
-.project-card {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill-item {
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 20px;
-  padding-top: 10px;
-  border-top: 1px solid #ddd;
+.scrollable {
+  scrollbar-width: none;
 }
